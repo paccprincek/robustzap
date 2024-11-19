@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zap Quizzes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>Zap <span>Quizzes</span></h1>
+    </div>
+    <nav>
+      <button class="btn" onclick="showQuizDashboard()">Dashboard</button>
+      <button class="btn" onclick="showCreateQuiz()">Create a Quiz</button>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h2>Unlock New Knowledge: Your Quiz Adventure Starts Here</h2>
+    <p>Browse our curated selection and discover quizzes you'll love</p>
+    <input type="text" class="search-bar" placeholder="Search Quizzes...">
+    <div class="quiz-categories">
+      <button onclick="loadCategory('Geopolitics')">Geopolitics</button>
+      <button onclick="loadCategory('Trivia')">Trivia</button>
+      <button onclick="loadCategory('History')">History</button>
+    </div>
+    <div id="quiz-section">
+      <h3>Featured Quizzes</h3>
+      <div class="quiz-list">
+        <div class="quiz-item">
+          <h4>Global Leaders Quiz</h4>
+          <p>Test your knowledge about current world leaders!</p>
+        <button onclick="startQuiz('Global Leaders')">Take Quiz</button>
+        </div>
+       <div class="quiz-item">
+  <h4>Global Leaders Quiz</h4>
+  <p>Test your knowledge about current world leaders!</p>
+  <button onclick="startQuiz('Global Leaders')">Take Quiz</button>
+  </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Zap Quizzes. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
